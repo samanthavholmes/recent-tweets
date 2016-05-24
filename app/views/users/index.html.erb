@@ -1,0 +1,7 @@
+View 10 most recent tweets by username
+
+<%= form_for :search, url: search_path do |t| %>
+  <%= t.label :username %><br>
+  <%= t.text_field :username %>
+  <%= t.submit "Search" %>
+<% end %>

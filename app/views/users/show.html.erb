@@ -1,0 +1,9 @@
+<div class = "container">
+  <h1><%= @user.username %>'s 10 most recent tweets!</h1>
+
+  <% @tweets.each do |tweet| %>
+    <p><%="#{tweet.text}"%> </p>
+    <p><%="#{tweet.created_at.strftime('%A, %b %-d, %Y')}"%></p>
+  <% end %>
+
+</div>
