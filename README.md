@@ -11,3 +11,4 @@ Ruby on Rails web application
 - [ ] Integrate REACT
 - [ ] Use Bootstrap for design
 - [ ] Add feature to find the most popular tweet of a user (based on number of retweets)
+- [ ] Deploy using AWS
