@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
 
-  root 'users#index'
-  get '/:username' => 'users#show'
-  post '/search' => 'users#show', as: :search
+  root 'search#index'
+
+  get '/:username' => 'search#show'
+  post '/search' => 'search#show', as: :search
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

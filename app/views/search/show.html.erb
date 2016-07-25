@@ -1,0 +1,19 @@
+<div class = "container">
+  <a href="/" id= "back-button" class="btn btn-info" role="button">Back To Search</a>
+
+  <% if @error %>
+    <h1><%= @error %></h1>
+  <% else %>
+  <h1 class= "title" id ="username"><a target= "blank" href= "https://twitter.com/#{@username}"><%= @username %></a></h1>
+
+    <% @tweets.each do |tweet| %>
+      <div class="panel panel-default">
+        <div class="panel-heading"><%="#{tweet[:created_at].strftime('%A, %b %-d, %Y')}"%></div>
+        <div class="panel-body"><%="#{tweet[:text]}"%></div>
+      </div>
+    <% end %>
+  <% end %>
+
+
+
+</div>
